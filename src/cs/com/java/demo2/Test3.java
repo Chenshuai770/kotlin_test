@@ -5,7 +5,7 @@ import cs.com.kotlinTest.demo2.Person;
 public class Test3 {
     public static void main(String[] args) {
         Person person = new Person();
-        person.setIsmarried(false);
+        person.setMarried(false);
         System.out.println(person.getName());
         System.out.println(129 % 3);
         int[] numArray=new int[100];

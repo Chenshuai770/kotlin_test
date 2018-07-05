@@ -12,11 +12,14 @@ public class PeoPle {
         return name;
     }
 
+
     public void setName(String name) {
         this.name = name;
     }
 
+
     public static void main(String[] args) {
+
 
         List<PeoPle> list=new ArrayList<>();
         PeoPle peoPle1 = new PeoPle();

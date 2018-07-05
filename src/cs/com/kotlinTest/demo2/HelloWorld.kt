@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
     println(rectangle.isSquare)
 
     var c=Person("高手",true)
-    println(c.name+" "+c.ismarried)
+    println(c.name+" "+c.isMarried)
 
     println("$a,${args[1]}")
     val languages= arrayListOf("java")
