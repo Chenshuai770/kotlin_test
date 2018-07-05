@@ -12,7 +12,7 @@ fun eval(e: Expr): Int {
     if (e is Sum) {
         return eval(e.right) + eval(e.left)
     }
-    throw IllegalAccessException("Unkonw expression")
+    throw IllegalAccessException("Unkonw expression") as Throwable
 }
 
 fun eval1(e: Expr): Int =

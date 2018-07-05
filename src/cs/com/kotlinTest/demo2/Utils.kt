@@ -1,5 +1,12 @@
 package cs.com.kotlinTest.demo2
 
+var StringBuilder.lastChar: Char
+    get() =
+        this.get(this.length - 1)
+    set(value: Char) {
+        this.setCharAt(this.length - 1, value)
+    }
+
 fun <T> Collection<T>.joinToString(
         separator: String = ",",
         prefix: String = "",
@@ -7,8 +14,8 @@ fun <T> Collection<T>.joinToString(
 ): String {
     val result = StringBuilder(prefix)
 
-    for ((index,element) in this.withIndex()){
-        if (index>0){
+    for ((index, element) in this.withIndex()) {
+        if (index > 0) {
             result.append(separator)
         }
         result.append(element)
@@ -16,3 +23,4 @@ fun <T> Collection<T>.joinToString(
     result.append(postfix)
     return result.toString()
 }
+

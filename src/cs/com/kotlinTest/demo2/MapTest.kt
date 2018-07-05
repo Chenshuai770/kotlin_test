@@ -5,6 +5,9 @@ import java.util.*
 var binaryReps=TreeMap<Char,String>()
 
 var list= arrayListOf( "11","23","234")
+var list1= listOf<String>( "11","23","234")
+
+infix fun Any.to(other:Any) =Pair(this,other)
 
 fun main(args: Array<String>) {
     for (c in 'A'..'F'){
@@ -21,6 +24,12 @@ fun main(args: Array<String>) {
     println(isLetter('x'))
 
     println("kotlin" in "java".."scale")
+
+    println(list.max())
+
+    val listTest = listOf("lsit :",*args)
+    println(listTest)
+
 
 }
 
