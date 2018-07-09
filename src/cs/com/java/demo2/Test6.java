@@ -11,7 +11,7 @@ public class Test6 {
 
 
     public static void main(String[] args) {
-        int varA = 1;
+        int varA = 2;
         List<Integer> mList = new ArrayList<>();
         mList.add(0);
 
@@ -19,7 +19,7 @@ public class Test6 {
         mList.add(2);
         mList.add(3);
 
-        mList.add(1, 1);
+        mList.add(varA, varA);
 
         System.out.println(mList);
         System.out.println(mList.size());

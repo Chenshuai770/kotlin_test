@@ -7,7 +7,7 @@ public class Test7 {
 
 
     public static void main(String[] args) {
-        int varA = 4;
+        int varA = 2;
         List<Integer> mList = new ArrayList<>();
         mList.add(0);
 
