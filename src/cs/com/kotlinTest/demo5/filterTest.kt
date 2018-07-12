@@ -4,6 +4,7 @@ package cs.com.kotlinTest.demo5
 fun main(args: Array<String>) {
     val list = listOf(1, 2, 3, 4)
     val numbers = mapOf(0 to "zero", 1 to "one")
+
     println(list.filter { it % 2 == 0 })
     println(numbers.mapValues { it.value.toUpperCase() })
 
