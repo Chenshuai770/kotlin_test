@@ -1,7 +1,5 @@
 package cs.com.kotlinTest.demo9
 
-import javax.print.attribute.standard.NumberUp
-
 //todo 带不变型类型参数的数据拷贝函数,但不支持非同类函数,因为前面的泛型限制了后面的类型
 fun <T> copyData(source: MutableList<T>,
                  destination: MutableList<T>) {
