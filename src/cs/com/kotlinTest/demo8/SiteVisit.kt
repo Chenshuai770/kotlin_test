@@ -31,7 +31,7 @@ fun List<SiteVisit>.averageDurationFor(os: OS) =
 
 //注意对比上面的lambda 表达式
 fun List<SiteVisit>.averageDurationBy(perdicate: (SiteVisit) -> Boolean) =
-    filter(perdicate).map(SiteVisit::duration).average()
+        filter(perdicate).map(SiteVisit::duration).average()
 
 fun main(args: Array<String>) {
     val averageWindowsDuration = log
